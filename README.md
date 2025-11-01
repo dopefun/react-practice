@@ -1,1 +1,5 @@
-react-practice
+# Каталог React-Практик
+
+## Содержание
+
+* [**Практическая работа №1: Основы React (Компоненты, Props, State)**](/react-practice/01/) 
