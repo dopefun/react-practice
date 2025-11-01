@@ -267,7 +267,7 @@ export default WelcomeMessage;
 После сохранения файлов в окне предпросмотра должна появиться одна карточка сотрудника.
 
 <div align="center">
-  <img src="assets/images/practice-1-img-1.png" alt="Карточки сотрудника" width="100%" />
+  <img src="images/practice-1-img-1.png" alt="Карточки сотрудника" width="100%" />
 </div>
 
 ### 2.2. Использование props для передачи данных
@@ -336,7 +336,7 @@ export default WelcomeMessage;
 В результате на странице будут отображены три разные карточки сотрудников, что демонстрирует переиспользуемость компонента.
 
 <div align="center">
-  <img src="assets/images/practice-1-img-2.png" alt="Три карточки" width="100%" />
+  <img src="images/practice-1-img-2.png" alt="Три карточки" width="100%" />
 </div>
 
 ### 2.3. Рендеринг списков из массива данных
@@ -507,7 +507,7 @@ const [stateVariable, setStateFunction] = useState(initialValue);
 
 
 <div align="center">
-  <img src="assets/images/practice-1-img-3.png" alt="Карточки с почтой" width="100%" />
+  <img src="images/practice-1-img-3.png" alt="Карточки с почтой" width="100%" />
 </div>
 
 
