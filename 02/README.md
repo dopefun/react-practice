@@ -496,7 +496,7 @@ p {
 
 
 <div align="center">
-  <img src="images/practice-1-img-3.png" alt="Карточки с почтой" width="100%" />
+  <img src="images/practice-2-img-1.png" alt="Карточки с почтой" width="100%" />
 </div>
 
 ---
