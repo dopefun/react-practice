@@ -507,7 +507,7 @@ const [stateVariable, setStateFunction] = useState(initialValue);
 
 
 <div align="center">
-  <img src="images/practice-1-img-3.png" alt="Карточки с почтой" width="100%" />
+  <img src="images/practice-2-img-1.png" alt="Конвертер" width="100%" />
 </div>
 
 
@@ -524,42 +524,12 @@ const [stateVariable, setStateFunction] = useState(initialValue);
 
 ### 3.1. Постановка задачи
 
-Модифицировать существующее приложение "Каталог сотрудников" для добавления функциональности отслеживания и изменения **рабочего статуса** каждого сотрудника (находится ли он на рабочем месте).
+Модифицировать существующее приложение "Каталог сотрудников" для добавления функциональности отслеживания и изменения **рабочего статуса** каждого сотрудника.
 
 ### 3.2. Требования к реализации
 
 1.  **Модификация данных:** В исходный массив `teamData` в файле `App.js` для каждого объекта сотрудника необходимо добавить новое свойство **`onSite`** с булевым значением (`true` или `false`). Начальные значения можно распределить произвольно.
 2.  **Передача данных:** Новое свойство `onSite` должно быть передано в компонент `TeamMemberCard` через props.
-3.  **Отображение статуса:** Внутри компонента `TeamMemberCard` необходимо отобразить текстовый индикатор статуса. Если `onSite` равно `true`, должен выводиться текст **"На месте"**. Если `false` – **"Отсутствует"**. Для визуального выделения статуса следует использовать условные CSS-классы. Например, можно добавить `<p className={onSite ? 'status-online' : 'status-offline'}>....` Соответствующие стили для этих классов (`.status-online` и `.status-offline`), изменяющие цвет текста (например, зеленый и серый), нужно добавить в `src/styles.css`.
+3.  **Отображение статуса:** Внутри компонента `TeamMemberCard` необходимо отобразить текстовый индикатор статуса. Если `onSite` равно `true`, должен выводиться текст **"На месте"**. Если `false` – **"Отсутствует"**.
 4.  **Добавление интерактивности:** В карточку `TeamMemberCard` необходимо добавить новую кнопку с текстом **"Изменить статус"**. По клику на эту кнопку статус сотрудника должен изменяться на противоположный (с "На месте" на "Отсутствует" и наоборот).
 5.  **Ограничение:** Для реализации данной функциональности разрешается использовать только те концепции и инструменты, которые были рассмотрены в данной практической работе, а именно: **props** и хук **useState**. Вся логика изменения статуса должна быть инкапсулирована внутри компонента `TeamMemberCard`.
-
-### 3.3. Ожидаемый результат
-
-* При первоначальной загрузке страницы каждая карточка сотрудника отображает его начальный рабочий статус с соответствующим цветом текста.
-* Клик по кнопке **"Изменить статус"** на одной из карточек изменяет текстовый статус и его цвет **только для этой конкретной карточки**, не затрагивая состояние соседних карточек.
-* Состояние рабочего статуса (`onSite`) должно быть независимым от состояния видимости деталей (`detailsVisible`). Изменение одного состояния не должно влиять на другое.
-
----
-
-### Источники
-
-1.  React – A JavaScript library for building user interfaces, дата последнего обращения: октября 31, 2025, https://legacy.reactjs.org/
-2.  facebook/react: The library for web and native user interfaces. - GitHub, дата последнего обращения: октября 31, 2025, https://github.com/facebook/react
-3.  React, дата последнего обращения: октября 31, 2025, https://react.dev/
-4.  React documentation - DevDocs, дата последнего обращения: октября 31, 2025, https://devdocs.io/react/
-5.  Your First Component – React, дата последнего обращения: октября 31, 2025, https://react.dev/learn/your-first-component
-6.  Components and Props - React, дата последнего обращения: октября 31, 2025, https://legacy.reactjs.org/docs/components-and-props.html
-7.  Writing Markup with JSX – React, дата последнего обращения: октября 31, 2025, https://react.dev/learn/writing-markup-with-jsx
-8.  Thinking in React, дата последнего обращения: октября 31, 2025, https://react.dev/learn/thinking-in-react
-9.  Setting up React Project on Online Editor CodeSandbox! | by Meghana Vadlapally | Medium, дата последнего обращения: октября 31, 2025, https://meghanareddy500.medium.com/setting-up-react-project-on-online-editor-codesandbox-2bc9ca45ed1
-10. React - Codesandbox, дата последнего обращения: октября 31, 2025, https://codesandbox.io/s/react-new
-11. Introducing JSX - React, дата последнего обращения: октября 31, 2025, https://legacy.reactjs.org/docs/introducing-jsx.html
-12. Quick Start - React, дата последнего обращения: октября 31, 2025, https://react.dev/learn
-13. Documentation - JSX - TypeScript, дата последнего обращения: октября 31, 2025, https://www.typescriptlang.org/docs/handbook/jsx.html
-14. Avatar Placeholder | Get free random avatars, дата последнего обращения: октября 31, 2025, https://avatar-placeholder.iran.liara.run/
-15. mhshariatipour1378/Avatars-Placeholder: Use this free API service to get and download random avatars based on username , gender and job for user profile pictures. Perfect for your avatar image needs in projects and prototypes. - GitHub, дата последнего обращения: октября 31, 2025, https://github.com/mhshariatipour1378/Avatars-Placeholder
-16. Passing Props to a Component – React, дата последнего обращения: октября 31, 2025, https://react.dev/learn/passing-props-to-a-component
-17. React Fundamentals - React Native, дата последнего обращения: октября 31, 2025, https://reactnative.dev/docs/intro-react
-18. Using the State Hook - React, дата последнего обращения: октября 31, 2025, https://legacy.reactjs.org/docs/hooks-state.html
-19. useState – React, дата последнего обращения: октября 31, 2025, https://react.dev/reference/react/useState
