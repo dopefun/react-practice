@@ -111,7 +111,7 @@ function BoilingVerdict(props) {
 export default BoilingVerdict;
 ```
 
-**Файл: `BoilingVerdict.js` (JavaScript)**
+**Файл: `Calculator.js` (JavaScript)**
 ```javascript
 import React from 'react';
 import TemperatureInput from './TemperatureInput';
