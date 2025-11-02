@@ -64,7 +64,7 @@
 
 Для встраивания JavaScript-выражений (переменной, вызова функции, арифметической операции) прямо в разметку используется синтаксис с фигурными скобками: `{}`.
 
-```javascript
+```jsx
 const userName = "Алексей";
 const element = <h1>Привет, {userName}!</h1>; // Выведет "Привет, Алексей!"
 
@@ -100,7 +100,7 @@ const birthYearElement = <p>Год рождения: {calculateYear(userAge)}</p
 
 **Пример (JavaScript):**
 
-```javascript
+```jsx
 // 1. Импорт
 import React from 'react';
 
@@ -141,7 +141,7 @@ export default WelcomeMessage;
 
     **Файл: `src/TeamMemberCard.js` (JavaScript)**
 
-    ```javascript
+    ```jsx
     import React from 'react';
 
     function TeamMemberCard() {
@@ -248,7 +248,7 @@ export default WelcomeMessage;
 
     **Файл: `src/App.js` (JavaScript)**
 
-    ```javascript
+    ```jsx
     import React from 'react';
     import TeamMemberCard from './TeamMemberCard';
     import './styles.css';
@@ -278,7 +278,7 @@ export default WelcomeMessage;
 
     **Файл: `src/TeamMemberCard.js` (JavaScript)**
 
-    ```javascript
+    ```jsx
     import React from 'react';
 
     function TeamMemberCard({ avatarUrl, name, position }) {
@@ -303,7 +303,7 @@ export default WelcomeMessage;
 
     **Файл: `src/App.js` (JavaScript)**
 
-    ```javascript
+    ```jsx
     import React from 'react';
     import TeamMemberCard from './TeamMemberCard';
     import './styles.css';
@@ -346,7 +346,7 @@ export default WelcomeMessage;
 1.  **Создание источника данных:** В **App.js** будет создан массив объектов, представляющих сотрудников.
 
     **Файл: `src/App.js` (начало файла - JavaScript)**
-    ```javascript
+    ```jsx
     const teamData = [
       {
         id: 1,
@@ -378,7 +378,7 @@ export default WelcomeMessage;
 2.  **Динамический рендеринг:** Для преобразования этого массива данных в массив React-компонентов используется стандартный метод JavaScript `Array.prototype.map()`.
 
     **Файл: `src/App.js` (компонент App - JavaScript)**
-    ```javascript
+    ```jsx
     export default function App() {
       return (
         <div className="app-container">
@@ -409,7 +409,7 @@ export default WelcomeMessage;
 Основным хуком для работы с состоянием является `useState`. Его синтаксис выглядит следующим образом:
 
 **Синтаксис `useState` (JavaScript):**
-```javascript
+```jsx
 const [stateVariable, setStateFunction] = useState(initialValue);
 ```
 Вызов `useState` возвращает массив из двух элементов, которые обычно получают с помощью деструктуризации:
@@ -426,7 +426,7 @@ const [stateVariable, setStateFunction] = useState(initialValue);
 1.  **Модификация данных:** Сначала необходимо добавить `email` в исходный массив `teamData` в `App.js` и передать его через props.
 
     **Файл: `src/App.js` (обновленный массив `teamData` - JavaScript)**
-    ```javascript
+    ```jsx
     const teamData = [
       {
         id: 1,
@@ -463,7 +463,7 @@ const [stateVariable, setStateFunction] = useState(initialValue);
 2.  **Реализация состояния и логики в TeamMemberCard:**
 
     **Файл: `src/TeamMemberCard.js` (JavaScript)**
-    ```javascript
+    ```jsx
     import React, { useState } from 'react'; // 1. Импорт useState
 
     function TeamMemberCard({ avatarUrl, name, position, email }) {
