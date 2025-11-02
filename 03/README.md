@@ -184,7 +184,7 @@ import TeamMemberCard from './TeamMemberCard';
 import './styles.css';
 
 export default function App() {
-  const = useState();
+  const [team, setTeam] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
