@@ -507,7 +507,7 @@ const [stateVariable, setStateFunction] = useState(initialValue);
 
 
 <div align="center">
-  <img src="images/practice-2-img-1.png" alt="Конвертер" width="100%" />
+  <img src="images/practice-1-img-3.png" alt="..." width="100%" />
 </div>
 
 
